@@ -1,0 +1,15 @@
+{
+  "name": "recycling-website",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Map-based recycling locator with Express proxy and caching",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "lru-cache": "^10.0.0"
+  }
+}

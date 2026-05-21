@@ -1,0 +1,4 @@
+[
+  { "id": "node/1", "type": "node", "lat": 40.0, "lon": -100.0, "tags": { "name": "County Recycling Dropoff", "amenity": "recycling", "recycling:paper": "yes" } },
+  { "id": "node/2", "type": "node", "lat": 40.02, "lon": -100.05, "tags": { "name": "Town Recycling Center", "amenity": "recycling", "recycling:glass": "yes" } }
+]
