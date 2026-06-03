@@ -42,6 +42,18 @@ const cache = new SimpleCache(500);
 
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
+app.use((req, res, next) => {
+  if (req.path.startsWith('/api/')) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  }
+  if (req.method === 'OPTIONS') {
+    return res.sendStatus(204);
+  }
+  next();
+});
+
 // Preload fallback dataset
 let FALLBACK = [];
 try {

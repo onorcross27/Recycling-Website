@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Recycling Locator</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?fix=1" />
   </head>
   <body>
     <div id="controls">
@@ -31,11 +31,12 @@
       </div>
       <button id="find">Find nearby recycling</button>
       <div id="status" class="status">Determining your location…</div>
+      <pre id="errorDump" class="error-dump" style="display:none"></pre>
     </div>
     <div id="map"></div>
     <div id="loading" style="display:none">Searching…</div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="app.js"></script>
+    <script src="app.js?fix=1"></script>
   </body>
 </html>
