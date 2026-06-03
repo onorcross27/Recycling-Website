@@ -1,3 +1,5 @@
+// This file is the package.json file, which defines the metadata and dependencies of the project. It includes the name, version, description, main entry point, scripts for starting and developing the server, and the dependencies on express and lru-cache.
+
 {
   "name": "recycling-website",
   "version": "0.1.0",

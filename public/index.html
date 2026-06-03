@@ -1,4 +1,6 @@
-<!doctype html>
+<!--This file gives the user the ability to search for recycling locations near them by material and radius. It also creates the map and gets the users location to display on the map. It also handles errors and displays them to the user.-->
+
+<!doctype html> 
 <html>
   <head>
     <meta charset="utf-8" />
@@ -8,7 +10,7 @@
     <link rel="stylesheet" href="style.css?fix=1" />
   </head>
   <body>
-    <div id="controls">
+    <div id="controls"> <!--search controls and user location status-->
       <div>
         <label for="material">Material</label>
         <input id="material" list="materials" placeholder="e.g. glass, batteries" />
@@ -25,7 +27,7 @@
         </datalist>
       </div>
       <div>
-        <label for="radius">Radius (mi)</label>
+        <label for="radius">Radius (mi)</label> <!--displays the radius in miles and the approximate distance in kilometers below it-->
         <input id="radius" type="number" value="12.5" min="0.1" max="200" step="0.1" />
         <div id="radius-help" style="font-size:12px;color:#444;margin-top:4px">~20.1 km</div>
       </div>
@@ -34,7 +36,7 @@
       <pre id="errorDump" class="error-dump" style="display:none"></pre>
     </div>
     <div id="map"></div>
-    <div id="loading" style="display:none">Searching…</div>
+    <div id="loading" style="display:none">Searching…</div> <!--displays when the user clicks the search button and is waiting for results-->
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="app.js?fix=1"></script>

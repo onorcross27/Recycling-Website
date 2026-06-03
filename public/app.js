@@ -1,3 +1,5 @@
+//this file manages the interface for the website by creating the map, getting the users location, and locating recycling locations
+
 (function ensureCorrectCodespaceHost() {
   try {
     const loc = window.location;

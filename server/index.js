@@ -1,3 +1,5 @@
+// This file sets up an Express server that serves a static frontend and provides an API endpoint for searching nearby recycling locations using the Overpass API. It includes a simple in-memory cache and a local fallback dataset for resilience.
+
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
